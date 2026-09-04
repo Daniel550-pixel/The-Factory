@@ -1,0 +1,19 @@
+services:
+  factory:
+    build: .
+    environment:
+      FACTORY_ENV: production
+      FACTORY_DATABASE_URL: postgresql://factory:factory@postgres:5432/factory
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: factory
+      POSTGRES_USER: factory
+      POSTGRES_PASSWORD: factory
+    volumes:
+      - factory_postgres:/var/lib/postgresql/data
+
+volumes:
+  factory_postgres:
