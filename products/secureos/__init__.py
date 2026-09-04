@@ -1,0 +1,1 @@
+"""SecureOS domain adapter boundary."""
