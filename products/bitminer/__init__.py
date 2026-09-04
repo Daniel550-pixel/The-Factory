@@ -1,0 +1,1 @@
+"""BitMiner domain adapter boundary."""
