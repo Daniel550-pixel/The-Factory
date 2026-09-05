@@ -5,6 +5,7 @@ from .agents import AgentResult, AgentRuntime, AgentSpec, ArbitrationResult, Arb
 from .context import ContextItem, ContextStore, ExecutionContext
 from .events import Event, EventLedger
 from .execution import ExecutionBoundary, ExecutionResult
+from .hardening import AuthorizationAudit, AuthorizationAuditLog, ExecutionReceipt, FailureInjector, IdempotencyConflict, IdempotencyStore
 from .human import Approval, ApprovalRequest, ApprovalStore
 from .memory import MemoryRecord, MemoryStore
 from .observability import Telemetry, TelemetryRecord
@@ -20,9 +21,11 @@ from .simulation import SimulationEngine, SimulationResult
 __all__ = [
     "AgentResult", "AgentRuntime", "AgentSpec", "ArbitrationResult", "Arbitrator",
     "ContextItem", "ContextStore", "ExecutionContext", "Event", "EventLedger",
-    "ExecutionBoundary", "ExecutionResult", "Approval", "ApprovalRequest", "ApprovalStore",
-    "MemoryRecord", "MemoryStore", "Telemetry", "TelemetryRecord", "FactoryRuntime", "RunResult",
-    "PolicyDecision", "PolicyGate", "Proposal", "Evidence", "EvidenceStore", "ProviderRegistry",
+    "ExecutionBoundary", "ExecutionResult", "AuthorizationAudit", "AuthorizationAuditLog",
+    "ExecutionReceipt", "FailureInjector", "IdempotencyConflict", "IdempotencyStore",
+    "Approval", "ApprovalRequest", "ApprovalStore", "MemoryRecord", "MemoryStore",
+    "Telemetry", "TelemetryRecord", "FactoryRuntime", "RunResult", "PolicyDecision",
+    "PolicyGate", "Proposal", "Evidence", "EvidenceStore", "ProviderRegistry",
     "ReplayEngine", "ReplayResult", "Scheduler", "Task", "Authorizer", "Identity",
     "SimulationEngine", "SimulationResult", "Tool", "ToolRegistry",
 ]
