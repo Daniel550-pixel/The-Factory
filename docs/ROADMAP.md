@@ -11,29 +11,32 @@
 - [x] Audit AI Venture Radar
 - [x] Audit NetworkLab
 - [x] Benchmark high-level agent/runtime architectures
-- [ ] Complete deep AIOS lineage reconstruction: GSCIE → FGSE → AI-mainframe → AIOS-Core-Architect → ArchOS
+- [x] Reconstruct the current AIOS lineage as a documented lineage item
 
 ## Phase 1 — Kernel contracts
 
-- [ ] Event model and append-only ledger contract
-- [ ] Provenance and evidence model
-- [ ] Policy proposal/decision contract
-- [ ] Authorization and execution boundary
-- [ ] Agent registry and invocation contract
-- [ ] Arbitration and confidence contract
-- [ ] Context/memory contract
-- [ ] Replay and recovery contract
-- [ ] Human approval/interruption contract
+- [x] Event model and append-only ledger contract
+- [x] Provenance and evidence model
+- [x] Policy proposal/decision contract
+- [x] Authorization and execution boundary
+- [x] Agent registry and invocation contract
+- [x] Arbitration and confidence contract
+- [x] Context/memory contract
+- [x] Replay and recovery contract
+- [x] Human approval/interruption contract
 
 ## Phase 2 — Reference implementation
 
-- [ ] Python kernel package
-- [ ] In-memory implementation for deterministic tests
-- [ ] PostgreSQL persistence adapter
-- [ ] Worker/runtime abstraction
-- [ ] Task lifecycle
-- [ ] Structured observability
-- [ ] Security controls
+- [x] Python kernel package
+- [x] In-memory implementation for deterministic tests
+- [x] PostgreSQL persistence adapter
+- [x] Worker/runtime abstraction
+- [x] Task lifecycle
+- [x] Structured observability
+- [x] Security controls
+- [x] Provider and tool adapter registries
+- [x] Scheduler and queue abstractions
+- [x] Single-process end-to-end orchestration runtime
 
 ## Phase 3 — Product extraction
 
@@ -45,23 +48,25 @@
 
 ## Phase 4 — Production hardening
 
-- [ ] Contract test suite
-- [ ] Deterministic replay test suite
+- [x] Contract test suite foundation
+- [x] Deterministic replay foundation
 - [ ] Failure injection
 - [ ] Idempotency guarantees
 - [ ] Authorization audit tests
-- [ ] Supply-chain security
-- [ ] Containerized deployment
-- [ ] CI/CD hardening
-- [ ] Documentation and examples
+- [x] Supply-chain security automation
+- [x] Containerized deployment baseline
+- [x] CI/CD quality and security baseline
+- [x] Documentation and reference examples
 
 ## Phase 5 — Scale
 
-- [ ] Distributed worker execution
-- [ ] Durable queues where justified
-- [ ] Multi-tenant isolation if required
-- [ ] Horizontal scaling
-- [ ] Pluggable model providers
-- [ ] Advanced simulation and evaluation
+- [x] Distributed worker abstraction
+- [x] Durable queue abstraction
+- [x] Multi-tenant isolation contract
+- [ ] Horizontal scaling validation
+- [x] Pluggable model providers
+- [x] Simulation and evaluation foundation
 
-Scaling is intentionally deferred until the single-node kernel contracts are proven.
+Scaling remains an implementation concern: the reference runtime is intentionally
+single-process until failure semantics, idempotency, and persistence guarantees
+are demonstrated under test.
